@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Unb';
+    src: url('../font/Unbounded-Regular.ttf');
+
+}
+
+*{
+    font-family: 'Unb';
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 500px;
+    background: gold;
+    box-shadow: 0 -200px 100px -120px crimson inset;
+    border: 10px solid white;
+    animation: background 3s infinite alternate;
+  }
+  
+@keyframes background {
+    50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+}
+
+.box_list{
+    display: flex;
+    flex-wrap: wrap;
+}
